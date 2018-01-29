@@ -53,7 +53,7 @@ class FaceRecogniser:
         """
         images = self.process_images_in_folder(recogniseImagesPath, {})
         recogniseFaces = self.get_all_faces_from_images(images)
-        self.faces = {**self.faces, **testFaces}
+        self.faces = {**self.faces, **recogniseFaces}
         
         self.groups = self.process_faces(recogniseFaces, 
                                    self.faces, 
