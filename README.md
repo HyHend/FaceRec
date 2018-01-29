@@ -11,11 +11,11 @@ The DLIB image recognition has an accuracy of 99.13% (99.36%, along with an perf
 ### Example usage:
 
 Train:
-`fr = FaceRecogniser(predictorPath, facerecModelPath)`
-`fr.train(trainImagesPath, labelsFilePath)`
+- `fr = FaceRecogniser(predictorPath, facerecModelPath)`
+- `fr.train(trainImagesPath, labelsFilePath)`
 
 Test:
-`result = fr.recognise(testImagesPath)`
+- `result = fr.recognise(testImagesPath)`
 
 Downloads:
 - predictorPath: `http://dlib.net/files/shape_predictor_5_face_landmarks.dat.bz2`
