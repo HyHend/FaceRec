@@ -62,10 +62,12 @@ class FaceRecogniser:
                                    maxCompareInGroup=4)
         print("Num groups: {0}".format(len(self.groups)))
         
+        result = {}
         for key in recogniseFaces:
             face = recogniseFaces[key]
             result[key] = {'face':recogniseFaces[key], 
                            'annotation':self.find_face_in_groups(key, self.groups)[0]}
+        return result
     
     def read_labels(self, labelsFile):
         """ Reads labels from given file
